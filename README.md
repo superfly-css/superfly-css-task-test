@@ -1,6 +1,8 @@
 # superfly-css-task-test
 
-The [superfly-css-task-test](https://github.com/superfly-css/superfly-css-task-test) task performs two functions.  It highlights content contained in `Test-markup` and generates a corresponding `Test-render` block that displays the markup contained in the `Test-markup` block.
+The [superfly-css-task-test](https://github.com/superfly-css/superfly-css-task-test) task:
+- Highlights content contained in `Test-markup`
+- Generates a corresponding `Test-render` block that displays the markup contained in the `Test-markup` block
 
 ## Walkthrough
 
