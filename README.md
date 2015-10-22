@@ -1,6 +1,6 @@
 # superfly-css-task-test
 
-The []() task performs two functions.  It highlights content contained in `Test-markup` and copies the content to a corresponding `Test-render` block for display.
+The [superfly-css-task-test](https://github.com/superfly-css/superfly-css-task-test) task performs two functions.  It highlights content cotnsained in `Test-markup` and copies the content to a corresponding `Test-render` block for display.
 
 ## Walkthrough
 
