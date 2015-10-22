@@ -1,0 +1,35 @@
+{
+  "name": "superfly-css-task-test",
+  "version": "0.0.0",
+  "description": "Test task",
+  "main": "src/main/css/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/superfly-css/superfly-css-task-test.git"
+  },
+  "keywords": [
+    "test",
+    "superfly-css",
+    "gulp",
+    "visual",
+    "testing",
+    "workflow",
+    "automation"
+  ],
+  "author": "Ole Ersoy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/superfly-css/superfly-css-task-test/issues"
+  },
+  "homepage": "https://github.com/superfly-css/superfly-css-task-test#readme",
+  "devDependencies": {
+    "glob-patterns": "0.0.0",
+    "gulp": "^3.9.0",
+    "gulp-cheerio": "^0.6.2",
+    "gulp-highlight": "^1.0.0",
+    "superfly-css-pli": "0.0.4"
+  }
+}
