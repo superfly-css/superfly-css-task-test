@@ -25,7 +25,7 @@
     "url": "https://github.com/superfly-css/superfly-css-task-test/issues"
   },
   "homepage": "https://github.com/superfly-css/superfly-css-task-test#readme",
-  "devDependencies": {
+  "dependencies": {
     "glob-patterns": "0.0.0",
     "gulp": "^3.9.0",
     "gulp-cheerio": "^0.6.2",
