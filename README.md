@@ -16,7 +16,11 @@ Move to the root of the package
 cd supefly-css-task-test
 ```
 
-Build the test `src/test/html/index.html`.  The prebuilt contents are shown below.  Once `src/test/html/index.html` is built the markup contained in `Test-markup` will be highlighted, and a corresponding `Test-render` block will be generated after the `Test-then` block.
+Build the test `src/test/html/index.html` by running:
+``` console
+gulp test:css
+```
+The prebuilt contents are shown below.  Once `src/test/html/index.html` is built the markup contained in `Test-markup` will be highlighted, and a corresponding `Test-render` block will be generated after the `Test-then` block.
 
 ```html
 <html>
