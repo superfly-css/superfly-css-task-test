@@ -4,7 +4,7 @@ The [superfly-css-task-test](https://github.com/superfly-css/superfly-css-task-t
 - Highlights content contained in `Test-markup`
 - Generates a corresponding `Test-render` block that displays the markup contained in the `Test-markup` block
 
-## Walkthrough
+## Usage
 
 Clone the package:
 ``` console
