@@ -10,19 +10,13 @@ var highlight = require('gulp-highlight');
 var path = require('path');
 
 var PLI = require('superfly-css-pli');
-var GLOB = require('glob-patterns');
 
 var renderTestBlock = '\n    <div class="Test-render"></div>';
-
-//---------------------------------------------------
-//All the css files to be tested
-//---------------------------------------------------
-var glob = path.join(PLI.src.test.html, GLOB.ALL_HTML);
 
 //---------------------------------
 gulp.task('test:css', function() {
   return gulp
-    .src(glob)
+    .src(PLI.SRC_MAIN_CSS)
     .pipe(cheerio(function($, file) {
       $('.Test-markup > code').each(function() {
         var markup = $(this).html();
