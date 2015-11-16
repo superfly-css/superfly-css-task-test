@@ -16,7 +16,7 @@ var renderTestBlock = '\n    <div class="Test-render"></div>';
 //---------------------------------
 gulp.task('test:css', function() {
   return gulp
-    .src(PLI.SRC_MAIN_CSS)
+    .src(PLI.SRC_TEST_HTML)
     .pipe(cheerio(function($, file) {
       $('.Test-markup > code').each(function() {
         var markup = $(this).html();
