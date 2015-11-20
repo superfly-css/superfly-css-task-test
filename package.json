@@ -4,7 +4,8 @@
   "description": "Test task",
   "main": "src/main/js/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "setup": "npm install",
+    "test": "npm run setup && gulp test:css"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,8 @@
     "gulp": "^3.9.0",
     "gulp-cheerio": "^0.6.2",
     "gulp-highlight": "^1.0.0",
-    "superfly-css-pli": "0.0.5"
+    "superfly-css-pli": "0.0.5",
+    "predentation": "^0.1.0",
+    "vinyl-transform": "^1.0.0"
   }
 }
