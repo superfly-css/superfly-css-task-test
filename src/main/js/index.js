@@ -1,13 +1,26 @@
 //==================================================
 //  Task
 //  test:css
-//  For the description see [SupeflyCSS Test Task](https://github.com/superfly-css/superfly-css-task-test/)
+//  For the description see
+//  [SupeflyCSS Test Task](https://github.com/superfly-css/superfly-css-task-test/)
+//  IMPLEMENTATION
+//  1: Cheerio copies content from `Test-markup`
+//     and appends it to the markup to the `Test-render`
+//
 //==================================================
 
 var gulp = require('gulp');
+
+// -1-
 var cheerio = require('gulp-cheerio');
 var highlight = require('gulp-highlight');
-var path = require('path');
+
+var transform = require('vinyl-transform');
+var predentation = require('predentation');
+
+var pre = transform(function(options) {
+  return predentation(options);
+});
 
 var PLI = require('superfly-css-pli');
 
@@ -26,5 +39,6 @@ gulp.task('test:css', function() {
       });
     }))
     .pipe(highlight())
+    .pipe(pre)
     .pipe(gulp.dest(PLI.target.test.html));
 });
