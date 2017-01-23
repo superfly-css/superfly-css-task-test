@@ -9,6 +9,13 @@
 
 <body>
   <div class="Test">
+
+   {% for item in ['100', '300'] %}
+      <div class="u-color-background-gray-{{item}}>
+        <code>u-color-background-gray-{{item}}</code>
+      </div>
+   {% endfor %}
+
     <h1 class="Test-suite">Superfly CSS <a href="https://github.com/superfly-css/superfly-css-components-grid">Grid Component</a> Tests</h1>
     <h2 class="Test-context">.Grid, Grid-cell</h2>
     <h3 class="Test-when">When the

@@ -11,6 +11,9 @@
 
 var gulp = require('gulp');
 
+// -0-
+var nunjucksRender = require('gulp-nunjucks-render');
+
 // -1-
 var cheerio = require('gulp-cheerio');
 var highlight = require('gulp-highlight');
@@ -30,6 +33,10 @@ var renderTestBlock = '\n    <div class="Test-render"></div>';
 gulp.task('test:css', function() {
   return gulp
     .src(PLI.SRC_TEST_HTML)
+    .pipe(nunjucksRender({
+      path: [PLI.src.main.nunjucks]
+    }))
+
     .pipe(cheerio(function($, file) {
       $('.Test-markup > code').each(function() {
         var markup = $(this).html();
@@ -38,7 +45,9 @@ gulp.task('test:css', function() {
         $($(this).parent().next()).after(renderTestBlock).next().append(markup);
       });
     }))
+    /*
     .pipe(highlight())
-    .pipe(pre)
+        .pipe(pre)
+        */
     .pipe(gulp.dest(PLI.target.test.html));
 });
