@@ -49,7 +49,7 @@ The prebuilt contents are shown below.  Once `src/test/html/index.html` is built
 </html>
 ```
 
-Postbuilt the test file looks like this:
+Post build the test file looks like this:
 
 ```html
 <html>
