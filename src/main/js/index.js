@@ -4,6 +4,7 @@
 //  For the description see
 //  [SupeflyCSS Test Task](https://github.com/superfly-css/superfly-css-task-test/)
 //  IMPLEMENTATION
+//  0: Support nunjucks template rendering within test markup
 //  1: Cheerio copies content from `Test-markup`
 //     and appends it to the markup to the `Test-render`
 //
@@ -36,7 +37,6 @@ gulp.task('test:css', function() {
     .pipe(nunjucksRender({
       path: [PLI.src.main.nunjucks]
     }))
-
     .pipe(cheerio(function($, file) {
       $('.Test-markup > code').each(function() {
         var markup = $(this).html();
@@ -45,9 +45,7 @@ gulp.task('test:css', function() {
         $($(this).parent().next()).after(renderTestBlock).next().append(markup);
       });
     }))
-    /*
     .pipe(highlight())
-        .pipe(pre)
-        */
+    .pipe(pre)
     .pipe(gulp.dest(PLI.target.test.html));
 });
