@@ -1,6 +1,6 @@
 {
   "name": "superfly-css-task-test",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Test task",
   "main": "src/main/js/index.js",
   "scripts": {
