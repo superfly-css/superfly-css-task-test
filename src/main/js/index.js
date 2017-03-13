@@ -42,7 +42,7 @@ gulp.task('test:css', function() {
         var markup = $(this).html();
         //Insert the Test-render block after the Test-then block
         //Append the markup block to the Test-render block
-        $($(this).parent().next()).after(renderTestBlock).next().append(markup);
+        $($(this).parent().parent().next().children('.Test_description')).after(renderTestBlock).next().append(markup);
       });
     }))
     .pipe(highlight())
