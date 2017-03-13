@@ -28,7 +28,7 @@ var pre = transform(function(options) {
 
 var PLI = require('superfly-css-pli');
 
-var renderTestBlock = '\n    <div class="Test-render"></div>';
+var renderTestBlock = '\n    <div class="Test_render"></div>';
 
 //---------------------------------
 gulp.task('test:css', function() {
@@ -38,7 +38,7 @@ gulp.task('test:css', function() {
       path: [PLI.src.main.nunjucks]
     }))
     .pipe(cheerio(function($, file) {
-      $('.Test-markup > code').each(function() {
+      $('.Test_markup > code').each(function() {
         var markup = $(this).html();
         //Insert the Test-render block after the Test-then block
         //Append the markup block to the Test-render block
